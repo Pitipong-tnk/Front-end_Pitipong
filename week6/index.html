@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>แบบฟอร์มสมัครงาน</title>
+</head>
+<body>
+    <h1>แบบฟอร์มสมัครงาน</h1>
+    <form>
+        <p>ชื่อ-นามสกุล</p><input class="input-1" type="text" name="name" placeholder="กรอกชื่อ-นามสกุล" required><br>
+        <p>เพศ</p>
+        <input type="radio" name="sex" value="male" required> เพศชาย
+        <input type="radio" name="sex" value="female" required> เพศหญิง
+        <input type="radio" name="sex" value="alternative gender" required> เพศทางเลือก<br>
+        <p>ภาษาโปรแกรมที่ถนัด</p>  
+        <input type="checkbox" name="language[]" value="python"> ภาษา Python<br>
+        <input type="checkbox" name="language[]" value="c++"> ภาษา C++<br>
+        <input type="checkbox" name="language[]" value="java"> ภาษา Java<br>
+        <input type="checkbox" name="language[]" value="html css"> ภาษา HTML CSS<br>
+        <p>อีเมล</p><input class="input-1" type="text" name="email" placeholder="กรอกอีเมล" required><br>
+        <p>เบอร์โทรศัพท์</p><input class="input-1" type="text" name="phone" placeholder="กรอกเบอร์โทรศัพท์" required><br>
+        <p>ตำแหน่งที่ต้องการสมัคร</p>
+        <select name="position">
+            <option value="program developer">นักพัฒนาโปรเเกรม</option>
+            <option value="designer">นักออกเเบบ</option>
+            <option value="manager">ผู้จัดการ</option>
+        </select><br>
+        <p>อัพโหลด</p><input type="file" name="file">
+        <p>ข้อความเพิ่มเติม</p>
+        <textarea placeholder="กรอกข้อความเพิ่มเติม" name="detail"></textarea><br>
+        <input type="submit" value="ส่งใบสมัคร">
+    </form>
+</body>
+</html>
